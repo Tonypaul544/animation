@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+
+    <style>
+        *{
+            margin: auto;
+        }
+        .holder{
+            margin-top: 30em;
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+            border-radius: 30em;
+            border: 45px double rgb(255, 255, 255);
+            border-top: 3.2em solid rgb(243, 2, 2);
+            animation: animate1 .49s linear infinite;
+        }
+
+        @keyframes animate1 {
+            to{
+                transform:rotate(360deg);
+            }
+        }
+
+        .both{
+            width: 25em;
+            height: 25em;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+            margin-top: 10em;
+            border: double 4em blue;
+            border-radius: 22em;
+            animation: animal alternate 2s linear infinite;
+            margin-top: .3em;
+            border-top: 5em;
+        }
+
+        
+
+        @keyframes animal{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <section class="holder"></section>
+    <br>
+    <section class="both">
+        <section class="second1"></section>
+        <section class="wow"></section>
+    </section>
+
+    <div>
+        <section class="ancestor">
+            <section class="child"></section>
+            <section class="brother">
+                <section class="grand-child"></section>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
